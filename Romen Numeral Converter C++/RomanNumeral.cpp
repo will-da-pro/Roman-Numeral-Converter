@@ -13,23 +13,10 @@
 
 using namespace std;
 int RomanNumeral::calculateInt() {
-    vector<pair<int, int>> itemList;
     int total = 0;
-    
     for(int i = 0; i < this->stringNum.length(); i++) {
-        int val = this->numerals[this->stringNum[i]];
-        if(itemList.size() == 0) {
-            itemList.push_back(make_pair(val, 1));
-        } else if(itemList[itemList.size() - 1].first == val) {
-            itemList[itemList.size() - 1].second += 1;
-        } else {
-            itemList.push_back(make_pair(val, 1));
-        }
-    }
-        
-    for(int i = 0; i < itemList.size(); i++) {
-        int value = itemList[i].first * itemList[i].second;
-        if(itemList[i+1].first > itemList[i].first) {
+        int value = this->numerals[this->stringNum[i]];
+        if(this->numerals[this->stringNum[i+1]] > value) {
             total -= value;
         } else {
             total += value;
@@ -93,7 +80,7 @@ string RomanNumeral::calculateString() {
     }
     result += this->getNumeral("C", "D", "M", hundreds);
     result += this->getNumeral("X", "L", "C", tens);
-    result += this->getNumeral("I", "V", "I", ones);
+    result += this->getNumeral("I", "V", "X", ones);
     
     this->stringNum = result;
     return result;
@@ -114,7 +101,8 @@ RomanNumeral::RomanNumeral(std::string num) {
         this->stringNum = num;
         this->calculateInt();
     } else {
-        throw "invalid number";
+        std::runtime_error invalid("Invalid Number!");
+        throw invalid;
         return;
     }
 }
