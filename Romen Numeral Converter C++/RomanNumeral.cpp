@@ -19,18 +19,12 @@ int RomanNumeral::calculateInt() {
     for(int i = 0; i < this->stringNum.length(); i++) {
         int val = this->numerals[this->stringNum[i]];
         if(itemList.size() == 0) {
-            cout << "List is empty\n";
             itemList.push_back(make_pair(val, 1));
         } else if(itemList[itemList.size() - 1].first == val) {
-            cout << "Item already exists\n";
             itemList[itemList.size() - 1].second += 1;
         } else {
-            cout << "Item doesn't exixt\n";
             itemList.push_back(make_pair(val, 1));
         }
-        cout << "value: " << itemList[itemList.size() - 1].first << endl;
-        cout << "amount: " << itemList[itemList.size() - 1].second << endl;
-        cout << i << ", " << this->stringNum[i] << "\n\n-------------------\n\n";
     }
         
     for(int i = 0; i < itemList.size(); i++) {
@@ -47,7 +41,7 @@ int RomanNumeral::calculateInt() {
     return total;
 }
 
-string RomanNumeral::getNumeral(char char1, char char2, char char3, int num) {
+string RomanNumeral::getNumeral(string char1, string char2, string char3, int num) {
     string result = "";
     switch (num) {
         case 0:
@@ -97,9 +91,9 @@ string RomanNumeral::calculateString() {
     for(int i = 0; i < thousands; i++) {
         result += "M";
     }
-    result += this->getNumeral('C', 'D', 'M', hundreds);
-    result += this->getNumeral('X', 'L', 'C', tens);
-    result += this->getNumeral('I', 'V', 'I', ones);
+    result += this->getNumeral("C", "D", "M", hundreds);
+    result += this->getNumeral("X", "L", "C", tens);
+    result += this->getNumeral("I", "V", "I", ones);
     
     this->stringNum = result;
     return result;

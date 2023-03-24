@@ -21,7 +21,7 @@ private:
     int intNum;
     string stringNum;
     
-    string getNumeral(char char1, char char2, char char3, int num);
+    string getNumeral(string char1, string char2, string char3, int num);
     
     map<char, int> numerals{
         {'i', 1},

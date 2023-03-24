@@ -6,24 +6,21 @@
 //
 
 #include <iostream>
-#include <map>
-#include <vector>
-#include <regex>
 #include "RomanNumeral.hpp"
 
 using namespace std;
 int main(int argc, const char * argv[]) {
+    string input;
+    cout << "Please enter a roman numeral or number to convert: ";
+    cin >> input;
     
-    RomanNumeral rn(10000);
-    cout << rn.getString() << "\n";
-    
-//    string input;
-//    cout << "Please enter a roman numeral to convert: ";
-//    cin >> input;
-//
-//    RomanNumeral rn(input);
-//
-//    cout << rn.getInt() << endl;
+    try {
+        RomanNumeral rn(stoi(input));
+        cout << rn.getString() << "\n";
+    } catch(exception e) {
+        RomanNumeral rn(input);
+        cout << rn.getInt() << "\n";
+    }
     
     return 0;
 }
