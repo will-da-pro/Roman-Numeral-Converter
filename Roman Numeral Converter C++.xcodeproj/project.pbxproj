@@ -24,7 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		79A3A19029CBDF1800443052 /* Romen Numeral Converter C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Romen Numeral Converter C++"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A3A19029CBDF1800443052 /* Roman Numeral Converter C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Roman Numeral Converter C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A3A19329CBDF1800443052 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		79A3A19A29CD29F900443052 /* RomanNumeral.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RomanNumeral.cpp; sourceTree = "<group>"; };
 		79A3A19B29CD29F900443052 /* RomanNumeral.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RomanNumeral.hpp; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		79A3A18729CBDF1800443052 = {
 			isa = PBXGroup;
 			children = (
-				79A3A19229CBDF1800443052 /* Romen Numeral Converter C++ */,
+				79A3A19229CBDF1800443052 /* Roman Numeral Converter C++ */,
 				79A3A19129CBDF1800443052 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,27 +52,27 @@
 		79A3A19129CBDF1800443052 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79A3A19029CBDF1800443052 /* Romen Numeral Converter C++ */,
+				79A3A19029CBDF1800443052 /* Roman Numeral Converter C++ */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		79A3A19229CBDF1800443052 /* Romen Numeral Converter C++ */ = {
+		79A3A19229CBDF1800443052 /* Roman Numeral Converter C++ */ = {
 			isa = PBXGroup;
 			children = (
 				79A3A19329CBDF1800443052 /* main.cpp */,
 				79A3A19A29CD29F900443052 /* RomanNumeral.cpp */,
 				79A3A19B29CD29F900443052 /* RomanNumeral.hpp */,
 			);
-			path = "Romen Numeral Converter C++";
+			path = "Roman Numeral Converter C++";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		79A3A18F29CBDF1800443052 /* Romen Numeral Converter C++ */ = {
+		79A3A18F29CBDF1800443052 /* Roman Numeral Converter C++ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79A3A19729CBDF1800443052 /* Build configuration list for PBXNativeTarget "Romen Numeral Converter C++" */;
+			buildConfigurationList = 79A3A19729CBDF1800443052 /* Build configuration list for PBXNativeTarget "Roman Numeral Converter C++" */;
 			buildPhases = (
 				79A3A18C29CBDF1800443052 /* Sources */,
 				79A3A18D29CBDF1800443052 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = "Romen Numeral Converter C++";
+			name = "Roman Numeral Converter C++";
 			productName = "Romen Numeral Converter C++";
-			productReference = 79A3A19029CBDF1800443052 /* Romen Numeral Converter C++ */;
+			productReference = 79A3A19029CBDF1800443052 /* Roman Numeral Converter C++ */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 79A3A18B29CBDF1800443052 /* Build configuration list for PBXProject "Romen Numeral Converter C++" */;
+			buildConfigurationList = 79A3A18B29CBDF1800443052 /* Build configuration list for PBXProject "Roman Numeral Converter C++" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79A3A18F29CBDF1800443052 /* Romen Numeral Converter C++ */,
+				79A3A18F29CBDF1800443052 /* Roman Numeral Converter C++ */,
 			);
 		};
 /* End PBXProject section */
@@ -261,7 +261,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		79A3A18B29CBDF1800443052 /* Build configuration list for PBXProject "Romen Numeral Converter C++" */ = {
+		79A3A18B29CBDF1800443052 /* Build configuration list for PBXProject "Roman Numeral Converter C++" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79A3A19529CBDF1800443052 /* Debug */,
@@ -270,7 +270,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79A3A19729CBDF1800443052 /* Build configuration list for PBXNativeTarget "Romen Numeral Converter C++" */ = {
+		79A3A19729CBDF1800443052 /* Build configuration list for PBXNativeTarget "Roman Numeral Converter C++" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79A3A19829CBDF1800443052 /* Debug */,
