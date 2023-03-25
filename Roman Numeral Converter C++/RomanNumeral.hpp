@@ -10,7 +10,6 @@
 
 #include <iostream>
 #include <map>
-#include <vector>
 #include <regex>
 
 #endif /* RomanNumeral_hpp */

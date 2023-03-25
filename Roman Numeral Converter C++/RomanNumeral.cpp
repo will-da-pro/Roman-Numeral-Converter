@@ -8,7 +8,6 @@
 #include "RomanNumeral.hpp"
 #include <iostream>
 #include <map>
-#include <vector>
 #include <regex>
 
 using namespace std;
